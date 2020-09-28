@@ -209,5 +209,16 @@ Response:
    }
 }
 ```
+# Parâmetros
+
+#### Parâmetros Perfil_id
+| Descrição     | Valor   |
+| ------------- |--------------:|
+| FROTA         | 1|
+| AGREGADO      | 2|
+| TERCEIRO      | 3|
+| AJUDANTE      | 4|
+
+
 
 
