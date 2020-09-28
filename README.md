@@ -11,9 +11,38 @@ $request->setHeaders(array(
           'Authorization' => {token}
         ));
 ```
-                     
+
+                  
 ## Enviar Pesquisa
+
 EndPoint: https://homologacao.soggsoft.com.br/ws/combo
+
+Objeto Motorista
+| Parâmetro     | Obrigatorio   |
+| ------------- |--------------:|
+| pesquisa_avancada      | SIM|
+| perfil_id      | SIM|
+| documento      | SIM|
+| nome      | SIM|
+| sexo      | SIM|
+| nascimento| SIM|
+| naturalidade| SIM|
+| rg| SIM|
+| rg_uf| SIM|
+| rg_emissao| NÃO|
+| cnh| SIM|
+| cnh_uf| SIM|
+| cnh_emissao| NÃO|
+| cnh_validade| SIM|
+| cnh_seguranca| SIM|
+| cnh_categoria_id| SIM|
+| cnh_prontuario| NÃO|
+| filiacao_materno| SIM|
+| filiacao_paterno| NÃO|
+| contato_telefone| NÃO|
+| contato_celular| NÃO|
+| contato_email| NÃO|
+| anexos| NÃO| 
 
 Request:
 
