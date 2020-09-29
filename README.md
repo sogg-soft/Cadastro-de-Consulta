@@ -292,6 +292,11 @@ Response:
 | TERCEIRO      | 3|
 | AJUDANTE      | 4|
 
+#### Parâmetros categoria
+| Descrição     | Valor   |
+| ------------- |--------------:|
+| CAVALO         | 'CAVALO'|
+| CARRETA      | 'CARRETA'|
 
 
 
