@@ -53,7 +53,7 @@ Tipo de requisição: `POST`
    "motorista":{
       "pesquisa_avancada":"N",
       "perfil_id":"1",
-      "documento":"606.775.460-68",
+      "documento":"60677546068",
       "nome":"MOTORISTA TESTE",
       "sexo":"M",
       "nascimento":"1992-06-17",
@@ -74,22 +74,58 @@ Tipo de requisição: `POST`
       "contato_celular":"66999999999",
       "contato_email":"CONTATO@SOGGSOFT.COM.BR",
       "anexos":[
-         "Imagem em base64"
+         "ImageBase64",
+         "ImageBase642"
       ]
    },
    "proprietarios":[
       {
          "perfil_id":"1",
-         "doc_proprietario":"606.775.460-68",
-         "nome":"RAZÃO SOCIAL",
+         "doc_proprietario":"25231510068",
+         "nome":"PROPRIETARIO 01",
          "sexo":"M",
          "uf":"MT",
-         "filiacao_materna":"Mae",
-         "filiacao_paterna":"Pai",
-         "email":"email@motorista.com.br",
-         "celular":"066 9 9695-4545",
-         "telefone":"066 3421-5485",
-         "documento_proprietario_anexo":"Imagem em base64",
+         "filiacao_materno":"Mae",
+         "filiacao_paterno":"Pai",
+         "contato_email":"email@motorista.com.br",
+         "contato_celular":"066 9 9695-4545",
+         "contato_telefone":"066 3421-5485",
+         "documento_proprietario_anexo":"ImageBase64",
+         "veiculos":[
+            {
+               "perfil_id":"1",
+               "renavam":"999999999",
+               "placa":"CCC1234",
+               "chassi":"2222222222",
+               "antt":"8888888",
+               "uf":"MT",
+               "categoria":"CAVALO",
+               "anexo":"ImageBase64"
+            },
+            {
+               "perfil_id":"1",
+               "renavam":"8888888888",
+               "placa":"VVV8888",
+               "chassi":"333333",
+               "antt":"8888888",
+               "uf":"MT",
+               "categoria":"CARRETA",
+               "anexo":"ImageBase64"
+            }
+         ]
+      },
+      {
+         "perfil_id":"1",
+         "doc_proprietario":"60677546068",
+         "nome":"PROPRIETARIO 02",
+         "sexo":"M",
+         "uf":"MT",
+         "filiacao_materno":"Mae",
+         "filiacao_paterno":"Pai",
+         "contato_email":"email@motorista.com.br",
+         "contato_celular":"066 9 9695-4545",
+         "contato_telefone":"066 3421-5485",
+         "documento_proprietario_anexo":"ImageBase64",
          "veiculos":[
             {
                "perfil_id":"1",
@@ -99,7 +135,7 @@ Tipo de requisição: `POST`
                "antt":"8888888",
                "uf":"MT",
                "categoria":"CAVALO",
-               "anexo":"Imagem em base64"
+               "anexo":"ImageBase64"
             },
             {
                "perfil_id":"1",
@@ -109,7 +145,7 @@ Tipo de requisição: `POST`
                "antt":"8888888",
                "uf":"MT",
                "categoria":"CARRETA",
-               "anexo":"Imagem em base64"
+               "anexo":"ImageBase64"
             }
          ]
       }
@@ -140,15 +176,15 @@ Response:
 ```json
 {
    "pesquisa":{
-      "id":"222",
-      "protocolo":"2809.1601307182\/2020",
+      "id":"259",
+      "protocolo":"2909.1601403938/2020",
       "status":"HOMOLOGADO",
       "pesquisa_avancada":"N",
-      "validade":"2020-09-29",
+      "validade":"2020-09-30",
       "categoria":"COMBO",
       "motorista":{
          "status":"HOMOLOGADO",
-         "documento":"606.775.460-68",
+         "documento":"60677546068",
          "nome":"MOTORISTA TESTE",
          "sexo":"M",
          "nascimento":"1992-06-17",
@@ -168,44 +204,81 @@ Response:
          "contato_celular":"66999999999",
          "contato_email":"CONTATO@SOGGSOFT.COM.BR",
          "anexos":[
-            "localhost.\/files\/analise_perfil\/api\/combo\/5-5f7200d7e2740.png"
+            "https://localhost/files/analise_perfil/api/combo/5-5f737adb304c5.png"
          ]
       },
-      "proprietario":{
-         "perfil_id":"1",
-         "doc_proprietario":"60677546068",
-         "nome":"RAZÃO SOCIAL",
-         "sexo":"M",
-         "uf":"MT",
-         "filiacao_materna":"Mae",
-         "filiacao_paterna":"Pai",
-         "contato_email":"email@motorista.com.br",
-         "contato_celular":"066 9 9695-4545",
-         "contato_telefone":"066 3421-5485",
-         "anexo":"localhost.\/files\/analise_perfil\/api\/combo\/5-5f7200d7e50e3.png",
-         "veiculos":[
-            {
-               "perfil_id":"1",
-               "renavam":"999999999",
-               "placa":"YYY8989",
-               "chassi":"2222222222",
-               "antt":"8888888",
-               "uf":"MT",
-               "categoria":"COMBO",
-               "anexo":"localhost.\/files\/analise_perfil\/api\/combo\/375-5f7200d7e7d97.png"
-            },
-            {
-               "perfil_id":"1",
-               "renavam":"8888888888",
-               "placa":"YYY9090",
-               "chassi":"333333",
-               "antt":"8888888",
-               "uf":"MT",
-               "categoria":"COMBO",
-               "anexo":"localhost.\/files\/analise_perfil\/api\/combo\/376-5f7200d7ea46b.png"
-            }
-         ]
-      }
+      "proprietario":[
+         {
+            "perfil_id":"1",
+            "doc_proprietario":"25231510068",
+            "nome":"PROPRIETARIO 01",
+            "sexo":"M",
+            "uf":"MT",
+            "filiacao_materno":"Mae",
+            "filiacao_paterno":"Pai",
+            "contato_email":"email@motorista.com.br",
+            "contato_celular":"066 9 9695-4545",
+            "contato_telefone":"066 3421-5485",
+            "anexo":"https://localhost/files/analise_perfil/api/combo/5-5f737adb32e9c.png",
+            "veiculos":[
+               {
+                  "perfil_id":"1",
+                  "renavam":"999999999",
+                  "placa":"CCC1234",
+                  "chassi":"2222222222",
+                  "antt":"8888888",
+                  "uf":"MT",
+                  "categoria":"COMBO",
+                  "anexo":"https://localhost/files/analise_perfil/api/combo/592-5f737adb36f2d.png"
+               },
+               {
+                  "perfil_id":"1",
+                  "renavam":"8888888888",
+                  "placa":"VVV8888",
+                  "chassi":"333333",
+                  "antt":"8888888",
+                  "uf":"MT",
+                  "categoria":"COMBO",
+                  "anexo":"https://localhost/files/analise_perfil/api/combo/593-5f737adb39ec7.png"
+               }
+            ]
+         },
+         {
+            "perfil_id":"1",
+            "doc_proprietario":"60677546068",
+            "nome":"PROPRIETARIO 02",
+            "sexo":"M",
+            "uf":"MT",
+            "filiacao_materno":"Mae",
+            "filiacao_paterno":"Pai",
+            "contato_email":"email@motorista.com.br",
+            "contato_celular":"066 9 9695-4545",
+            "contato_telefone":"066 3421-5485",
+            "anexo":"https://localhost/files/analise_perfil/api/combo/5-5f737adb3c37e.png",
+            "veiculos":[
+               {
+                  "perfil_id":"1",
+                  "renavam":"999999999",
+                  "placa":"YYY8989",
+                  "chassi":"2222222222",
+                  "antt":"8888888",
+                  "uf":"MT",
+                  "categoria":"COMBO",
+                  "anexo":"https://localhost/files/analise_perfil/api/combo/595-5f737adb3ee13.png"
+               },
+               {
+                  "perfil_id":"1",
+                  "renavam":"8888888888",
+                  "placa":"YYY9090",
+                  "chassi":"333333",
+                  "antt":"8888888",
+                  "uf":"MT",
+                  "categoria":"COMBO",
+                  "anexo":"https://localhost/files/analise_perfil/api/combo/596-5f737adb4193e.png"
+               }
+            ]
+         }
+      ]
    }
 }
 ```
