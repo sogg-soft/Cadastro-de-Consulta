@@ -207,7 +207,7 @@ Response:
             "https://localhost/files/analise_perfil/api/combo/5-5f737adb304c5.png"
          ]
       },
-      "proprietario":[
+      "proprietarios":[
          {
             "perfil_id":"1",
             "doc_proprietario":"25231510068",
