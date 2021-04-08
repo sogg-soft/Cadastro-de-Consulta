@@ -17,32 +17,75 @@ $request->setHeaders(array(
 
 EndPoint: https://homologacao.soggsoft.com.br/ws/combo
 
-Objeto Motorista
-| Parâmetro     | Obrigatorio   |
-| ------------- |--------------:|
-| pesquisa_avancada      | SIM|
-| perfil_id      | SIM|
-| documento      | SIM|
-| nome      | SIM|
-| sexo      | SIM|
-| nascimento| SIM|
-| naturalidade| SIM|
-| rg| SIM|
-| rg_uf| SIM|
-| rg_emissao| NÃO|
-| cnh| SIM|
-| cnh_uf| SIM|
-| cnh_emissao| NÃO|
-| cnh_validade| SIM|
-| cnh_seguranca| SIM|
-| cnh_categoria_id| SIM|
-| cnh_prontuario| NÃO|
-| filiacao_materno| SIM|
-| filiacao_paterno| NÃO|
-| contato_telefone| NÃO|
-| contato_celular| NÃO|
-| contato_email| NÃO|
-| anexos| NÃO| 
+
+<details>
+<summary>Detalhes objeto Motorista</summary>
+
+| Parâmetro     | Obrigatorio   | Tipo | Valor |
+| ------------- |--------------|--------------|--------------:|
+| pesquisa_avancada      | SIM| String | ('Y' ou'N') |
+| perfil_id      | SIM| int | [Parâmetros](https://github.com/sogg-soft/Cadastro-de-Consulta#par%C3%A2metros-perfil_id)  |
+| documento      | SIM| String |
+| nome      | SIM| String | 
+| sexo      | SIM| String(1) | 'F' ou'M' |
+| nascimento| SIM| Date | 'yyyy-mm-dd' |
+| naturalidade| SIM| String |
+| rg| SIM| String(11) |
+| rg_uf| SIM| String(2) |
+| rg_emissao| NÃO| Date | 'yyyy-mm-dd' |
+| cnh| SIM| String |
+| cnh_uf| SIM| String(2) |
+| cnh_emissao| NÃO| Date | 'yyyy-mm-dd' |
+| cnh_validade| SIM| Date | 'yyyy-mm-dd' |
+| cnh_seguranca| SIM| String | [Obter Cód Segurança](https://youtu.be/9kgIFn4vPVk?t=45)  |
+| cnh_categoria_id| SIM| int | [Parâmetros](#)  |
+| cnh_prontuario| NÃO| String |
+| filiacao_materno| SIM| String | 
+| filiacao_paterno| NÃO| String |
+| contato_telefone| NÃO| String | xx xxxx-xxxx|
+| contato_celular| NÃO| String | xx x xxxx-xxxx|
+| contato_email| NÃO| String | email@dominio.com.br |
+| anexos| NÃO| String | Base64 |
+
+</details>
+
+<details>
+<summary>Detalhes objeto Proprietário</summary>
+
+| Parâmetro     | Obrigatorio   | Tipo | Valor |
+| ------------- |--------------|--------------|--------------:|
+| perfil_id      | SIM| int | [Parâmetros](https://github.com/sogg-soft/Cadastro-de-Consulta#par%C3%A2metros-perfil_id)  | 
+| doc_proprietario      | SIM| String | CPF ou CNPJ |
+| nome | SIM | String |  
+| sexo | NÃO | String(1) | 
+| uf | NÃO | String(2) |
+| filiacao_materno| NÃO| String |
+| filiacao_paterno| NÃO| String |
+| razao_social| SIM | String |  
+| inscricao_municipal| NÃO | String | 
+| inscricao_estadual| NÃO | String | 
+| contato_email| NÃO| String | email@dominio.com.br |
+| contato_telefone| NÃO| String | xx xxxx-xxxx|
+| contato_celular| NÃO| String | xx x xxxx-xxxx|
+| anexos| NÃO| String | Base64 |
+
+</details>
+
+<details>
+<summary>Detalhes objeto Veículo</summary>
+
+| Parâmetro     | Obrigatorio   | Tipo | Valor |
+| ------------- |--------------|--------------|--------------:|
+| perfil_id | SIM | int | [Parâmetros](https://github.com/sogg-soft/Cadastro-de-Consulta#par%C3%A2metros-perfil_id)  | 
+| renavam | SIM | String |
+| placa | SIM | String |
+| chassi | SIM | String |
+| antt | SIM | String |
+| uf | SIM | String (2) |
+| categoria | SIM | String | [Parâmetros](https://github.com/sogg-soft/Cadastro-de-Consulta#par%C3%A2metros-categoria)  |
+| anexo | NÃO | String | Base64 |
+
+</details>
 
 Request:
 
@@ -297,6 +340,19 @@ Response:
 | ------------- |--------------:|
 | CAVALO         | 'CAVALO'|
 | CARRETA      | 'CARRETA'|
+
+#### Parâmetros cnh_categoria_id
+| ID     | Categoria   |
+| ------------- |--------------:|
+| 1 |A|
+| 2 |B|
+| 3 |C|
+| 4 |D|
+| 5 |E|
+| 6 |AB|
+| 7 |AC|
+| 8 |AD|
+| 8 |AE|
 
 
 
