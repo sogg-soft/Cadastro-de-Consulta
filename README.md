@@ -38,7 +38,7 @@ EndPoint: https://homologacao.soggsoft.com.br/ws/combo
 | cnh_emissao| NÃO| Date | 'yyyy-mm-dd' |
 | cnh_validade| SIM| Date | 'yyyy-mm-dd' |
 | cnh_seguranca| SIM| String | [Obter Cód Segurança](https://youtu.be/9kgIFn4vPVk?t=45)  |
-| cnh_categoria_id| SIM| int | [Parâmetros](#)  |
+| cnh_categoria_id| SIM| int | [Parâmetros Categoria](https://github.com/sogg-soft/Cadastro-de-Consulta#par%C3%A2metros-cnh_categoria_id)  |
 | cnh_prontuario| NÃO| String |
 | filiacao_materno| SIM| String | 
 | filiacao_paterno| NÃO| String |
