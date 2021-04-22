@@ -321,9 +321,43 @@ Response:
                }
             ]
          }
-      ]
+      ],
+      "ocorrencias": []
    }
 }
+```
+ Caso a pesquisa retorne status PENDENCIA_CLIENTE sera adicionado um ou mais objetos (1 para cada ocorrencia), dentro do array ocorrencias.
+Exemplo:
+```JSON
+{
+  "pesquisa": {
+    "informacoes referente a pesquisa":  "...",
+    "motorista": [
+      "...."
+    ],
+    "proprietarios": [
+      "...."
+    ],
+    "ocorrencias": [
+      {
+        "objeto": "Motorista",
+        "ocorrencia": "CNH VENCIDA",
+        "observacao": "CNH DO MOTORISTA VENCIDA"
+      },
+      {
+        "objeto": "Veículo",
+        "ocorrencia": "PLACA NÃO CONFERE",
+        "observacao": "PLACA NÃO ENCONTRADA"
+      },
+      {
+        "objeto": "Proprietário",
+        "ocorrencia": "NOME DIGITADO ERRADO",
+        "observacao": "NOME NÃO CONFERE COM DOCUMENTO"
+      }
+    ]
+  }
+}
+
 ```
 # Parâmetros
 
