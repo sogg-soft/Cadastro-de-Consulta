@@ -202,7 +202,7 @@ Será retornado o código da nova pesquisa gerada, é necessário armarzena-lo p
 HTTP CODE `201` 
 ```json
 {
-  "codigo": "204",
+  "codigo": "cb5d2100-62c5-4ca0-a7d3-3dae3df7876f",
   "message": "success"
 }
 ```
@@ -219,7 +219,7 @@ Response:
 ```json
 {
    "pesquisa":{
-      "id":"259",
+      "id":"cb5d2100-62c5-4ca0-a7d3-3dae3df7876f",
       "protocolo":"2909.1601403938/2020",
       "status":"HOMOLOGADO",
       "pesquisa_avancada":"N",
@@ -359,6 +359,34 @@ Exemplo:
 }
 
 ```
+
+## Alterar Pesquisa
+Obs: O método PUT está disponível apenas caso o status da pesquisa seja igual à PENDENCIA_CLIENTE
+EndPoint: https://homologacao.soggsoft.com.br/ws/combo/{{idPesquisa}}
+Tipo de requisição: `PUT`
+Request:
+Utilizar o mesmo body do método POST, porém é necessário enviar apenas os atributos que deseja alterar.
+Exemplo de request para alterar o nome do motorista:
+
+```json
+{
+  "motorista": {
+    "nome": "Henrique da Silva"
+  }
+}
+```
+
+Response
+HTTP CODE `200`
+```json
+{
+  "codigo": "cb5d2100-62c5-4ca0-a7d3-3dae3df7876f",
+  "message": "success"
+}
+```
+
+
+```json
 # Parâmetros
 
 #### Parâmetros Perfil_id
