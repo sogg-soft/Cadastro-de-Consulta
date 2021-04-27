@@ -386,7 +386,7 @@ HTTP CODE `200`
 ```
 
 
-```json
+
 # Parâmetros
 
 #### Parâmetros Perfil_id
