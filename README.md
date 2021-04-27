@@ -224,6 +224,7 @@ Response:
       "status":"HOMOLOGADO",
       "pesquisa_avancada":"N",
       "validade":"2020-09-30",
+      "revalidacao": false,
       "categoria":"COMBO",
       "motorista":{
          "status":"HOMOLOGADO",
