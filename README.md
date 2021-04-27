@@ -386,6 +386,27 @@ HTTP CODE `200`
 ```
 
 
+## Revalidar Pesquisa
+Obs: Funcionalidade disponóvel quando a consulta anterior retornar o atributo revalidacao como true. Não é necessário enviar nenhum JSON no body da requisição.
+
+EndPoint: https://homologacao.soggsoft.com.br/ws/combo/revalidacao/{{idPesquisa}}
+
+Tipo de requisição: `POST`
+
+Request:
+```json
+{}
+```
+
+Response:
+
+HTTP CODE `201` 
+```json
+{
+   "codigo":"43228c21-83b5-45b4-a3d0-c4a5e737880c",
+   "message":"success"
+}
+```
 
 # Parâmetros
 
