@@ -223,8 +223,9 @@ Response:
       "protocolo":"2909.1601403938/2020",
       "status":"HOMOLOGADO",
       "pesquisa_avancada":"N",
-      "validade":"2020-09-30",
-      "revalidacao": false,
+      "validade": "2021-05-05",
+      "revalidacao": true,
+      "validade_revalidacao": "2021-10-27",
       "categoria":"COMBO",
       "motorista":{
          "status":"HOMOLOGADO",
