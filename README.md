@@ -199,6 +199,7 @@ Tipo de requisição: `POST`
 Response:
 Será retornado o código da nova pesquisa gerada, é necessário armarzena-lo para pesquisar o status da consulta posteriormente.
 Caso o documento do motorista enviado na pesquisa não esteja cadastrado no sistema, o mesmo será realizado e vinculado a empresa, nesta caso, será adicionado o atributo motoristaID.
+
 Nota: Caso o documento do motorista já esteja cadastrado para empresa, o atributo motoristaID não será retornado
 
 HTTP CODE `201` 
