@@ -214,7 +214,9 @@ HTTP CODE `201`
 
 ## Consultar Pesquisa
 
-EndPoint: https://homologacao.soggsoft.com.br/ws/combo/{{idPesquisa}}
+É possível consultar uma pesquisa em específico passando o id da mesma, exemplo: `https://homologacao.soggsoft.com.br/ws/combo/?id=cb5d2100-62c5-4ca0-a7d3-3dae3df7876f`, ou passando o documento de um motorista, caso exista pesquisa para o motorista em questão, será retornado a última pesquisa realizada para o mesmo, exemplo: `https://homologacao.soggsoft.com.br/ws/combo/?documento=36375073073`
+
+EndPoint: https://homologacao.soggsoft.com.br/ws/combo/?{paramêtro}={valor}
 
 Request:
 
