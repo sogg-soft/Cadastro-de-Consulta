@@ -394,7 +394,10 @@ HTTP CODE `200`
 
 
 ## Revalidar Pesquisa
-Obs: Funcionalidade disponóvel quando a consulta anterior retornar o atributo revalidacao como true. Não é necessário enviar nenhum JSON no body da requisição.
+Obs: Funcionalidade disponóvel quando a consulta anterior retornar o atributo revalidacao como true. 
+É possível realizar a revalidação passando dois parâmetros, o código da pesquisa ou o documento do motorista. Ambas os métodos irão retornar o mesmo response.
+
+Revalidação enviando o código da pesquisa:
 
 EndPoint: https://homologacao.soggsoft.com.br/ws/combo/revalidacao/{{idPesquisa}}
 
@@ -403,6 +406,20 @@ Tipo de requisição: `POST`
 Request:
 ```json
 {}
+```
+
+
+Revalidação enviando o documento do motorista:
+
+EndPoint: https://homologacao.soggsoft.com.br/ws/combo/revalidacao/
+
+Tipo de requisição: `POST`
+
+Request:
+```json
+{
+   "documento":"60677546068"
+}
 ```
 
 Response:
