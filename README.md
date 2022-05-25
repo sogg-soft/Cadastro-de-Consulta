@@ -87,12 +87,15 @@ EndPoint: https://homologacao.soggsoft.com.br/ws/combo
 
 </details>
 
+> solicitante: Campo para informar quem foi o solicitante consulta. Não é obrigatório
+
 ##### Request:
 
 Tipo de requisição: `POST`
 
 ```json
 {
+   "solicitante":"Nome do solicitante",
    "motorista":{
       "pesquisa_avancada":"N",
       "perfil_id":"1",
