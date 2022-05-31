@@ -87,7 +87,12 @@ EndPoint: https://homologacao.soggsoft.com.br/ws/combo
 
 </details>
 
-> solicitante: Campo para informar quem foi o solicitante consulta. Não é obrigatório
+`solicitante: Campo para informar quem foi o solicitante consulta. Não é obrigatório`
+
+``` 
+anexos: enviar no formato base64, informando o tipo de arquivo 
+ex: data:application/pdf;base64,JVBERi0xLjQNCiXi48/TDQoxIDAgb2J... 
+```
 
 ##### Request:
 
@@ -120,8 +125,8 @@ Tipo de requisição: `POST`
       "contato_celular":"66999999999",
       "contato_email":"CONTATO@SOGGSOFT.COM.BR",
       "anexos":[
-         "ImageBase64",
-         "ImageBase642"
+         "data:image/png;base64,YmFzZTY0IGRhIGltYWdlbQ==",
+         "data:image/png;base64,YmFzZTY0IGRhIGltYWdlbQ=="
       ]
    },
    "proprietarios":[
@@ -136,7 +141,7 @@ Tipo de requisição: `POST`
          "contato_email":"email@motorista.com.br",
          "contato_celular":"066 9 9695-4545",
          "contato_telefone":"066 3421-5485",
-         "documento_proprietario_anexo":"ImageBase64",
+         "documento_proprietario_anexo":"data:image/png;base64,YmFzZTY0IGRhIGltYWdlbQ==",
          "veiculos":[
             {
                "perfil_id":"1",
@@ -146,7 +151,7 @@ Tipo de requisição: `POST`
                "antt":"8888888",
                "uf":"MT",
                "categoria":"CAVALO",
-               "anexo":"ImageBase64"
+               "anexo":"data:image/png;base64,YmFzZTY0IGRhIGltYWdlbQ=="
             },
             {
                "perfil_id":"1",
@@ -156,7 +161,7 @@ Tipo de requisição: `POST`
                "antt":"8888888",
                "uf":"MT",
                "categoria":"CARRETA",
-               "anexo":"ImageBase64"
+               "anexo":"data:image/png;base64,YmFzZTY0IGRhIGltYWdlbQ=="
             }
          ]
       },
@@ -171,7 +176,7 @@ Tipo de requisição: `POST`
          "contato_email":"email@motorista.com.br",
          "contato_celular":"066 9 9695-4545",
          "contato_telefone":"066 3421-5485",
-         "documento_proprietario_anexo":"ImageBase64",
+         "documento_proprietario_anexo":"data:image/png;base64,YmFzZTY0IGRhIGltYWdlbQ==",
          "veiculos":[
             {
                "perfil_id":"1",
@@ -181,7 +186,7 @@ Tipo de requisição: `POST`
                "antt":"8888888",
                "uf":"MT",
                "categoria":"CAVALO",
-               "anexo":"ImageBase64"
+               "anexo":"data:image/png;base64,YmFzZTY0IGRhIGltYWdlbQ=="
             },
             {
                "perfil_id":"1",
@@ -191,7 +196,7 @@ Tipo de requisição: `POST`
                "antt":"8888888",
                "uf":"MT",
                "categoria":"CARRETA",
-               "anexo":"ImageBase64"
+               "anexo":"data:image/png;base64,YmFzZTY0IGRhIGltYWdlbQ=="
             }
          ]
       }
