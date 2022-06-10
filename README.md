@@ -413,34 +413,25 @@ EndPoint: https://homologacao.soggsoft.com.br/ws/combo/revalidacao/{{idPesquisa}
 
 Tipo de requisição: `POST`
 
-Request:
-```json
-{}
-```
-
-
-Revalidação enviando o documento do motorista:
-
-EndPoint: https://homologacao.soggsoft.com.br/ws/combo/revalidacao/
-
-Tipo de requisição: `POST`
+`solicitante: Campo para informar quem foi o solicitante consulta. Não é obrigatório`
 
 Request:
 ```json
 {
-   "documento":"60677546068"
+  "solicitante": "solicitante"
 }
 ```
 
-Response:
-
-HTTP CODE `201` 
+Response
+HTTP CODE `200`
 ```json
 {
-   "codigo":"43228c21-83b5-45b4-a3d0-c4a5e737880c",
-   "message":"success"
+   "codigo": "123456",
+   "status": "AGUARDANDO",
+   "message": "success"
 }
 ```
+
 
 # Parâmetros
 
